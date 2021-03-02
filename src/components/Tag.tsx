@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, StyleProp} from 'react-native';
+import colors from '../utils/colors';
 
 // import { Container } from './styles';
 
@@ -9,21 +10,27 @@ interface TagProps {
 
 const components = (props: TagProps) => {
   return (
-    <View>
+    <View style={styles.viewTag}>
       <Text style={styles.tag}>{props.tag}</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  tag: {
+  viewTag: {
+    flex: 0,
     paddingVertical: 2,
     paddingHorizontal: 6,
-    fontSize:16,
-    lineHeight:16,
+    borderWidth: 1,
+    borderColor: colors.orange,
+    borderBottomRightRadius: 8,
+    justifyContent: 'center'
+  },
+  tag: {
+    fontSize:12,
     fontFamily: "Inter-Medium",
     textTransform: "uppercase",
-    borderWidth: 1
+    color: colors.orange
   }
 });
 

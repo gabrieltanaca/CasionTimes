@@ -1,9 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
-import Tag from '../components/Tag';
+
+// import { Container } from './styles';
 
 const components: React.FC = () => {
-  return <Tag tag='Destaque'/>;
+  return <View />;
 }
 
 export default components;

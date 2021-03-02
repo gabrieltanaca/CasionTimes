@@ -1,10 +1,13 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, ScrollView } from 'react-native';
 
 // import { Container } from './styles';
 
 const pages: React.FC = () => {
-  return <View />;
+  return (
+    <ScrollView>
+    </ScrollView>
+  );
 }
 
 export default pages;
