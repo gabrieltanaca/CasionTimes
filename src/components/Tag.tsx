@@ -5,13 +5,15 @@ import colors from '../utils/colors';
 // import { Container } from './styles';
 
 interface TagProps {
-  tag: string,
+  tag: string;
 }
 
-const components = (props: TagProps) => {
+const Tag = (props: TagProps) => {
   return (
-    <View style={styles.viewTag}>
-      <Text style={styles.tag}>{props.tag}</Text>
+    <View style={{ flexDirection: 'row'}}>
+      <View style={styles.viewTag}>
+        <Text style={styles.tag}>{props.tag}</Text>
+      </View>
     </View>
   );
 };
@@ -19,19 +21,20 @@ const components = (props: TagProps) => {
 const styles = StyleSheet.create({
   viewTag: {
     flex: 0,
-    paddingVertical: 2,
-    paddingHorizontal: 6,
+    paddingBottom: 1,
+    paddingHorizontal: 5,
     borderWidth: 1,
     borderColor: colors.orange,
     borderBottomRightRadius: 8,
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginBottom: 10,
   },
   tag: {
-    fontSize:12,
-    fontFamily: "Inter-Medium",
-    textTransform: "uppercase",
-    color: colors.orange
-  }
+    fontSize: 12,
+    fontFamily: 'Inter-Medium',
+    textTransform: 'uppercase',
+    color: colors.orange,
+  },
 });
 
-export default components;
+export default Tag;

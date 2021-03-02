@@ -4,7 +4,7 @@ import {StyleSheet, View} from 'react-native';
 import CasionTimes from '../assets/casiontimeslogo.svg';
 import colors from '../utils/colors';
 
-const components: React.FC = () => {
+const Logo: React.FC = () => {
   return (
     <View style={styles.logo}>
       <CasionTimes {...image} />
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default components;
+export default Logo;
