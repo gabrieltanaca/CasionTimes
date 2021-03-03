@@ -18,7 +18,7 @@ const pages: React.FC = () => {
         <View>
           <Text style={styles.textList}>Todas as notícias</Text>
           {news.map((news) => (
-            <NewsCards {...news} />
+            <NewsCards key={news.title} {...news} />
           ))}
         </View>
       </ScrollView>
