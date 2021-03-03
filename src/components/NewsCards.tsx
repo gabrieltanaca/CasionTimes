@@ -1,25 +1,27 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+
 import colors from '../utils/colors';
 import Tag from './Tag';
+import { NewsI } from '../utils/interface';
 
-interface cardProps {
-  image: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
-  tag: string;
-  title: string;
-}
+const NewCards = (props: NewsI) => {
+  const navigate = useNavigation();
+  const {title, tag, image: Image} = props;
 
-const NewCards = ({title, tag, image: Image}: cardProps) => {
   return (
-    <View style={styles.card}>
-      <View style={styles.image}>
-        <Image width='96' height='96' />
+    <TouchableOpacity onPress={() => navigate.navigate('Post', props)}>
+      <View style={styles.card}>
+        <View style={styles.image}>
+          <Image width="96" height="96" />
+        </View>
+        <View style={styles.informationView}>
+          <Tag tag={tag} />
+          <Text style={styles.title}>{title}</Text>
+        </View>
       </View>
-      <View style={styles.informationView}>
-        <Tag tag={tag} />
-        <Text style={styles.title}>{title}</Text>
-      </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -38,15 +40,17 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 17,
     fontFamily: 'Inter-Regular',
+    lineHeight: 25.5,
+    color: colors.black,
     flex: 1,
-    color: colors.black
+
   },
   image: {
     width: 96,
     height: 96,
     borderLeftWidth: 3,
     borderLeftColor: colors.orange,
-  }
+  },
 });
 
 export default NewCards;

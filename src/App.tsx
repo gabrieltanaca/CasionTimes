@@ -2,24 +2,24 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import HomePage from './pages/HomePage';
-import PostPage from './pages/PostPage';
+import Home from './pages/Home';
+import Post from './pages/Post';
 
 const Stack = createStackNavigator();
 
 const App = (): React.ReactElement => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Post">
+      <Stack.Navigator initialRouteName="Home">
         <Stack.Screen
           name="Home"
-          component={HomePage}
+          component={Home}
           options={{headerTitle: '', headerTransparent: true}}
         />
         <Stack.Screen
           name="Post"
-          component={PostPage}
-          options={{headerTitle: '', headerTransparent: true}}
+          component={Post}
+          options={{headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>

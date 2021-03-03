@@ -5,26 +5,20 @@ import news from '../utils/news';
 import breakingNewImage from '../assets/breakingNew.svg';
 import NewsCards from '../components/NewsCards';
 import BreakingNew from '../components/BreakingNew';
-import Logo from '../components/Logo';
+import Header from '../components/Header';
 
 const pages: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
-        <View style={styles.logo}>
-          <Logo />
-        </View>
+        <Header />
 
-        <BreakingNew
-          image={breakingNewImage}
-          title="Descubra o sabor de rosquinha que melhor te representa!"
-        />
-        <Text style={styles.textButton}>Leia agora -&gt;</Text>
+        <BreakingNew {...news[0]} />
 
         <View>
           <Text style={styles.textList}>Todas as notícias</Text>
           {news.map((news) => (
-            <NewsCards tag={news.tag} image={news.image} title={news.title} />
+            <NewsCards {...news} />
           ))}
         </View>
       </ScrollView>
@@ -39,17 +33,6 @@ const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: colors.white,
     paddingHorizontal: 24,
-  },
-  logo: {
-    alignItems: 'center',
-  },
-  textButton: {
-    fontFamily: 'Inter-Regular',
-    fontSize: 12,
-    textTransform: 'uppercase',
-    alignSelf: 'flex-end',
-    color: colors.gray,
-    marginBottom: 1,
   },
   textList: {
     fontFamily: 'PTSerif-BoldItalic',

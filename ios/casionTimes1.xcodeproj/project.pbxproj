@@ -21,6 +21,7 @@
 		4705C2E6E74049EE91904F69 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 571A81C23AB246FBB275C97F /* Inter-Regular.ttf */; };
 		9AE6DAD0CF894D63AC496FF3 /* PTSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9657E5328114BE789B3D0C1 /* PTSerif-BoldItalic.ttf */; };
 		1746369AE21D483FAB4D1F6B /* PTSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5BB55877EC146BDA623AED7 /* PTSerif-Italic.ttf */; };
+		58F459FB0B264007943700D8 /* PTSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FADBB3FF1E84BA799A9FD3A /* PTSerif-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		571A81C23AB246FBB275C97F /* Inter-Regular.ttf */ = {isa = PBXFileReference; name = "Inter-Regular.ttf"; path = "../src/assets/fonts/Inter/Inter-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		C9657E5328114BE789B3D0C1 /* PTSerif-BoldItalic.ttf */ = {isa = PBXFileReference; name = "PTSerif-BoldItalic.ttf"; path = "../src/assets/fonts/PT-Serif/PTSerif-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		B5BB55877EC146BDA623AED7 /* PTSerif-Italic.ttf */ = {isa = PBXFileReference; name = "PTSerif-Italic.ttf"; path = "../src/assets/fonts/PT-Serif/PTSerif-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4FADBB3FF1E84BA799A9FD3A /* PTSerif-Regular.ttf */ = {isa = PBXFileReference; name = "PTSerif-Regular.ttf"; path = "../src/assets/fonts/PT-Serif/PTSerif-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				571A81C23AB246FBB275C97F /* Inter-Regular.ttf */,
 				C9657E5328114BE789B3D0C1 /* PTSerif-BoldItalic.ttf */,
 				B5BB55877EC146BDA623AED7 /* PTSerif-Italic.ttf */,
+				4FADBB3FF1E84BA799A9FD3A /* PTSerif-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				4705C2E6E74049EE91904F69 /* Inter-Regular.ttf in Resources */,
 				9AE6DAD0CF894D63AC496FF3 /* PTSerif-BoldItalic.ttf in Resources */,
 				1746369AE21D483FAB4D1F6B /* PTSerif-Italic.ttf in Resources */,
+				58F459FB0B264007943700D8 /* PTSerif-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
