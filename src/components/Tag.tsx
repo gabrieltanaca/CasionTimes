@@ -2,8 +2,6 @@ import React from 'react';
 import {View, Text, StyleSheet, StyleProp} from 'react-native';
 import colors from '../utils/colors';
 
-// import { Container } from './styles';
-
 interface TagProps {
   tag: string;
 }

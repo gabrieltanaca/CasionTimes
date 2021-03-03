@@ -1,4 +1,4 @@
-import donutsImage from '../assets/donutsNews.svg';
+import donutsImage from '../assets/donuts.svg';
 import eolicImage from '../assets/eolic.svg';
 import skateImage from '../assets/skate.svg';
 import hackImage from '../assets/hack.svg';

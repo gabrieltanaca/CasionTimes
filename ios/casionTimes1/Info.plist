@@ -58,6 +58,8 @@
 		<string>Inter-Bold.ttf</string>
 		<string>Inter-Medium.ttf</string>
 		<string>Inter-Regular.ttf</string>
+		<string>PTSerif-BoldItalic.ttf</string>
+		<string>PTSerif-Italic.ttf</string>
 	</array>
 </dict>
 </plist>

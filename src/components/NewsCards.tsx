@@ -26,17 +26,20 @@ const NewCards = ({title, tag, image: Image}: cardProps) => {
 const styles = StyleSheet.create({
   card: {
     flexDirection: 'row',
-    paddingBottom: 16,
+    paddingVertical: 16,
+    borderBottomWidth: 1,
+    borderColor: 'rgba(110,121,131,0.2)',
   },
   informationView: {
     flexDirection: 'column',
-    marginLeft: 24,
+    paddingLeft: 24,
     maxWidth: 243,
   },
   title: {
     fontSize: 17,
     fontFamily: 'Inter-Regular',
     flex: 1,
+    color: colors.black
   },
   image: {
     width: 96,
