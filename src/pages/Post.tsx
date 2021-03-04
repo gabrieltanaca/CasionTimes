@@ -5,7 +5,6 @@ import {
   SafeAreaView,
   StyleSheet,
   Text,
-  Image,
 } from 'react-native';
 import colors from '../utils/colors';
 
@@ -13,6 +12,11 @@ import Header from '../components/Header';
 import Tag from '../components/Tag';
 import {useRoute} from '@react-navigation/native';
 import {NewsI} from '../utils/interface';
+import { LogBox } from 'react-native';
+
+LogBox.ignoreLogs([
+ 'Non-serializable values were found in the navigation state',
+]);
 
 const pages: React.FC = () => {
   const {image: Image, tag, subtitle, title, notice} = useRoute()
@@ -41,8 +45,8 @@ const pages: React.FC = () => {
 
           <View style={styles.post}>
             <Text style={styles.subtitle}>{subtitle}</Text>
-            {notice.split('./.').map((paragrafo) => (
-              <Text style={styles.notice}>{paragrafo}</Text>
+            {notice.split('./.').map((paragrafo, index) => (
+              <Text key={index} style={styles.notice}>{paragrafo}</Text>
             ))}
           </View>
         </View>

@@ -2,7 +2,6 @@ import React from 'react';
 import {View, StyleSheet, ScrollView, SafeAreaView, Text} from 'react-native';
 import colors from '../utils/colors';
 import news from '../utils/news';
-import breakingNewImage from '../assets/breakingNew.svg';
 import NewsCards from '../components/NewsCards';
 import BreakingNew from '../components/BreakingNew';
 import Header from '../components/Header';
